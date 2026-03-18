@@ -1,0 +1,105 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #111;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* BANNER */
+.banner {
+  height: 80vh;
+  background: linear-gradient(45deg, #333, #555);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SEÇÕES */
+section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+/* GRID SERVIÇOS */
+.grid-servicos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: #eee;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* DEPOIMENTOS */
+.depoimentos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: auto;
+}
+
+input, textarea {
+  padding: 0.8rem;
+  width: 100%;
+}
+
+button {
+  padding: 0.8rem;
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner {
+    height: 60vh;
+    padding: 1rem;
+  }
+}
