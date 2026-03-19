@@ -1,0 +1,48 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.services {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: $espacamento / 2;
+  }
+
+  &__card {
+    background: $cor-clara;
+    padding: $espacamento;
+    border-radius: 10px;
+  }
+}
+
+.testimonials {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: $espacamento / 2;
+  }
+}
+
+.form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: $espacamento / 2;
+
+  &__input,
+  &__textarea {
+    padding: 0.8rem;
+  }
+
+  &__button {
+    @include botao;
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: $espacamento / 2;
+  background: $cor-primaria;
+  color: $cor-branca;
+}
