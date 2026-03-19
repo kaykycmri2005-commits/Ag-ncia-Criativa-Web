@@ -1,0 +1,13 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin botao {
+  padding: 0.8rem;
+  background: $cor-primaria;
+  color: $cor-branca;
+  border: none;
+  cursor: pointer;
+}
