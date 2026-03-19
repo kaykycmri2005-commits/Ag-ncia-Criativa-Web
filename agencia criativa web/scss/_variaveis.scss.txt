@@ -1,0 +1,8 @@
+$cor-primaria: #111;
+$cor-secundaria: #555;
+$cor-clara: #eee;
+$cor-branca: #fff;
+
+$fonte-padrao: Arial, sans-serif;
+
+$espacamento: 2rem;
