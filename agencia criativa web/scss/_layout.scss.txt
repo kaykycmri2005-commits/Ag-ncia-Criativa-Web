@@ -1,0 +1,57 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section {
+  padding: $espacamento * 2 0;
+  text-align: center;
+
+  &__title {
+    margin-bottom: $espacamento;
+  }
+}
+
+.header {
+  background: $cor-primaria;
+  color: $cor-branca;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $espacamento / 2 0;
+  }
+
+  &__nav-list {
+    display: flex;
+    list-style: none;
+    gap: $espacamento;
+  }
+
+  &__link {
+    color: $cor-branca;
+    text-decoration: none;
+  }
+}
+
+.banner {
+  height: 80vh;
+  background: linear-gradient(45deg, $cor-primaria, $cor-secundaria);
+  color: $cor-branca;
+
+  @include flex-center;
+  flex-direction: column;
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__text {
+    margin-top: $espacamento / 2;
+  }
+}
